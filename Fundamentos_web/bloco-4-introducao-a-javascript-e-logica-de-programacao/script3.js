@@ -1,5 +1,7 @@
 const currentHour = 19;
 let message = " ";
+let weekday ='sábado';
+
 
 if (currentHour >= 22) {
     message = "Não deveríamos comer nada, é hora de dormir";
@@ -14,3 +16,9 @@ if (currentHour >= 22) {
 }
 
 console.log(message);
+
+if(weekday === "segunda-feira" || weekday === "terça-feira" || weekday === "quarta-feira" || weekday === "quinta-feira" || weekday === "sexta-feira") {
+    console.log("Oba, mais um dia de aprendizado na Trybe >:D");
+}else if (weekday === "sábado" || weekday === "domingo") {
+    console.log("FINALMENTE, descanso merecido UwU");
+}
