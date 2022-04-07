@@ -65,4 +65,11 @@ for (let i = 0; i < 25; i += 1) {
   arrayAutogerado[i] = numero;
   numero += 1;
 }
-console.log(arrayAutogerado);
+//console.log(arrayAutogerado);
+
+//exercicio 9
+let arrayAutogeradoDivididoPorDois = arrayAutogerado;
+for (i = 0; i< 25; i += 1) {
+  arrayAutogeradoDivididoPorDois[i] = (arrayAutogerado[i] / 2);
+}
+console.log(arrayAutogeradoDivididoPorDois);
