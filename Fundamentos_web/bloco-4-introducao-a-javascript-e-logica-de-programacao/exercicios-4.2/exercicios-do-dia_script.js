@@ -49,11 +49,20 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // console.log(contador);
 
 //exercicio 7
-let menorNum = numbers[0];
-for (let i = 1; i < numbers.length; i += 1) {
-  if (menorNum > numbers[i]) {
-    menorNum = numbers[i]; 
-  }
-}
+// let menorNum = numbers[0];
+// for (let i = 1; i < numbers.length; i += 1) {
+//   if (menorNum > numbers[i]) {
+//     menorNum = numbers[i]; 
+//   }
+// }
 
-console.log(menorNum);
+// console.log(menorNum);
+
+//exercicio 8
+let arrayAutogerado = [];
+let numero = 1;
+for (let i = 0; i < 25; i += 1) {
+  arrayAutogerado[i] = numero;
+  numero += 1;
+}
+console.log(arrayAutogerado);
