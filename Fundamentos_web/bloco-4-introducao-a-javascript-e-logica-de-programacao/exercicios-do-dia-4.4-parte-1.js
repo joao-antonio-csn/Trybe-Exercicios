@@ -6,5 +6,10 @@ let info = {
   };
 
   //exercicio 1
-  console.log('Bem-vinda, ' + info.personagem);
+// console.log('Bem-vinda, ' + info.personagem);
 
+//exercicio 2
+
+info['recorrente'] = 'Sim';
+
+console.table(info);
