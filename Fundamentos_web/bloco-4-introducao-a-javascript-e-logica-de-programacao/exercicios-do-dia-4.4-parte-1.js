@@ -12,4 +12,18 @@ let info = {
 
 info['recorrente'] = 'Sim';
 
-console.table(info);
+// console.table(info);
+
+//exercicio 3
+
+for (let key in info) {
+  console.log(key);
+}
+
+console.log('--------------------------------');
+
+//exercicio 4
+
+for (let key in info) {
+    console.log(info[key]);
+  }
