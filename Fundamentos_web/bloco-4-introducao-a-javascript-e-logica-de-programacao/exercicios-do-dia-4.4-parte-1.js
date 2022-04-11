@@ -44,7 +44,7 @@
 //       console.log('Ambos recorrentes');
 //   }
 
-// Exercicio 6
+// Exercicio 6,7 e 8
 
 let leitor = {
     nome: 'Julia',
@@ -56,9 +56,16 @@ let leitor = {
         autor: 'Daniela Kopsch',
         editora: 'Tordesilhas',
       },
+      {
+        titulo: 'Harry Potter e o Prisioneiro de Azkaban',
+        autor: 'JK Rowling',
+        editora: 'Rocco',
+      },
     ],
   };
 
 let titulo1 = leitor.livrosFavoritos[0];
 
 console.log('O livro favorito de ' + leitor.nome + ' ' + leitor.sobrenome + ' se chama ' + titulo1['titulo']);
+
+console.log(leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros favoritos');
