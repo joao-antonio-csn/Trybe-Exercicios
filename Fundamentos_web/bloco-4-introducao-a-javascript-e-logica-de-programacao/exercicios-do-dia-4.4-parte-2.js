@@ -53,17 +53,37 @@ Retorno esperado: false
 // Array de teste: [2, 4, 6, 7, 10, 0, -3]; .
 // Valor esperado no retorno da função: 6 .
 
-arrayTest = [2, 4, 6, 7, 10, 0, -3];
-let menorValor = 0;
-let index = 0;
-console.log(menorValorNoArray(arrayTest));
+// arrayTest = [2, 4, 6, 7, 10, 0, -3];
+// let menorValor = 0;
+// let index = 0;
+// console.log(menorValorNoArray(arrayTest));
 
-function menorValorNoArray (array) {
+// function menorValorNoArray (array) {
+//   for (let i = 0; i < array.length; i+=1) {
+//     if(menorValor > array[i]) {
+//       menorValor = array[i];
+//       index = i;
+//     }
+//   }
+//   return index;
+// }
+
+//Exercício 4
+
+// Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres.
+// Array de teste: ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']; .
+// Valor esperado no retorno da função: Fernanda .
+
+arrayTest = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+let maiorNome = '';
+let index = 0;
+console.log(maiorNomeNoArray(arrayTest));
+
+function maiorNomeNoArray (array) {
   for (let i = 0; i < array.length; i+=1) {
-    if(menorValor > array[i]) {
-      menorValor = array[i];
-      index = i;
+    if(maiorNome.length < array[i].length) {
+      maiorNome = array[i];
     }
   }
-  return index;
+  return maiorNome;
 }
