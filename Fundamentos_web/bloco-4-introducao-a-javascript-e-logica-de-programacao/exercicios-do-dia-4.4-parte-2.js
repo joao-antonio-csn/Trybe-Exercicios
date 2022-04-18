@@ -74,16 +74,38 @@ Retorno esperado: false
 // Array de teste: ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']; .
 // Valor esperado no retorno da função: Fernanda .
 
-arrayTest = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
-let maiorNome = '';
-let index = 0;
-console.log(maiorNomeNoArray(arrayTest));
+// arrayTest = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+// let maiorNome = '';
+// let index = 0;
+// console.log(maiorNomeNoArray(arrayTest));
 
-function maiorNomeNoArray (array) {
+// function maiorNomeNoArray (array) {
+//   for (let i = 0; i < array.length; i+=1) {
+//     if(maiorNome.length < array[i].length) {
+//       maiorNome = array[i];
+//     }
+//   }
+//   return maiorNome;
+// }
+
+
+//Exercício 5
+
+// Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete.
+// Array de teste: [2, 3, 2, 5, 8, 2, 3]; .
+// Valor esperado no retorno da função: 2 .
+
+arrayTest = [2, 3, 2, 5, 8, 2, 3];
+let sum = 0;
+let repeatedNum = 0;
+console.log(mostRepeatedNumInArray(arrayTest));
+
+function mostRepeatedNumInArray (array) {
   for (let i = 0; i < array.length; i+=1) {
-    if(maiorNome.length < array[i].length) {
-      maiorNome = array[i];
+    if(repeatedNum === array[i]) {
+      repeatedNum = array[i];
+      sum += 1;
     }
   }
-  return maiorNome;
+  return repeatedNum;
 }
